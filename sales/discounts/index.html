@@ -1,0 +1,185 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-sales/discounts" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>Скидки: логика применения | MyCompany documentation</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:url content=https://danchanka.github.io/sales/discounts/><meta data-rh=true property=og:locale content=ru><meta data-rh=true property=og:locale:alternate content=en><meta data-rh=true name=docusaurus_locale content=ru><meta data-rh=true name=docsearch:language content=ru><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="Скидки: логика применения | MyCompany documentation"><meta data-rh=true name=description content="В системе скидка — это отдельный объект «Скидка», который может применяться к строкам документов продаж (в первую очередь — к строкам заказа покупателя)."><meta data-rh=true property=og:description content="В системе скидка — это отдельный объект «Скидка», который может применяться к строкам документов продаж (в первую очередь — к строкам заказа покупателя)."><link data-rh=true rel=icon href=/img/favicon.ico><link data-rh=true rel=canonical href=https://danchanka.github.io/sales/discounts/><link data-rh=true rel=alternate href=https://danchanka.github.io/en/sales/discounts/ hreflang=en><link data-rh=true rel=alternate href=https://danchanka.github.io/sales/discounts/ hreflang=ru><link data-rh=true rel=alternate href=https://danchanka.github.io/sales/discounts/ hreflang=x-default><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="MyCompany documentation RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="MyCompany documentation Atom Feed"><link rel=preconnect href=https://www.google-analytics.com><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-38678623-1","auto"),ga("send","pageview")</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-9PP67L9JM9"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9PP67L9JM9",{})</script><link rel=stylesheet href=/assets/css/styles.a546c6e9.css><script src=/assets/js/runtime~main.3459fa88.js defer></script><script src=/assets/js/main.ddefb16a.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:"light",document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="navbar navbar--fixed-top"><div class=navbar__inner><div class=navbar__items><button aria-label="Переключить навигационную панель" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo.png alt=Logo class="themedComponent_mlkZ themedComponent--light_NVdE"><img src=/img/logo.png alt=Logo class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">MyCompany</b></a></div><div class="navbar__items navbar__items--right"><a href=https://github.com/lsfusion-solutions/mycompany target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>Русский</a><ul class=dropdown__menu><li><a href=/en/sales/discounts/ target=_self rel="noopener noreferrer" class=dropdown__link lang=en>English</a><li><a href=/sales/discounts/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ru>Русский</a></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="Переключение между темным и светлым режимом (сейчас используется Светлый режим)" aria-label="Переключение между темным и светлым режимом (сейчас используется Светлый режим)" aria-live=polite aria-pressed=false><svg viewBox="0 0 24 24" width=24 height=24 class=lightToggleIcon_pyhR><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 class=darkToggleIcon_wfgR><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg></button></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/>Модули системы — обзор</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/administration/>Администрирование</a><button aria-label="Expand sidebar category 'Администрирование'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/masterdata/>Справочники</a><button aria-label="Expand sidebar category 'Справочники'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--active" href=/sales/>Модуль Продаж</a><button aria-label="Collapse sidebar category 'Модуль Продаж'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/sales/orders/>Заказы покупателя</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/sales/shipments/>Отгрузки по заказам</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/sales/invoices/>Реализации по заказам</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/sales/pricelists/>Прайс-листы и типы цен</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/sales/discounts/>Скидки: логика применения</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/sales/workflow-and-statuses/>Процесс и статусы заказа покупателя</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/sales/reports/>Отчёты по продажам</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/sales/settings/>Настройки продаж</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/purchase/>Модуль Закупки</a><button aria-label="Expand sidebar category 'Модуль Закупки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/inventory/>Модуль Склад</a><button aria-label="Expand sidebar category 'Модуль Склад'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/manufacturing/>Модуль Производство</a><button aria-label="Expand sidebar category 'Модуль Производство'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/invoicing/>Модуль Расчеты</a><button aria-label="Expand sidebar category 'Модуль Расчеты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/retail/>Розничная торговля</a><button aria-label="Expand sidebar category 'Розничная торговля'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/crm/>CRM</a><button aria-label="Expand sidebar category 'CRM'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/projectManagement/>Управление проектами</a><button aria-label="Expand sidebar category 'Управление проектами'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/humanResources/>Управление персоналом</a><button aria-label="Expand sidebar category 'Управление персоналом'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/transport/>Транспорт</a><button aria-label="Expand sidebar category 'Транспорт'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/sales/><span itemprop=name>Модуль Продаж</span></a><meta itemprop=position content=1><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link itemprop=name>Скидки: логика применения</span><meta itemprop=position content=2></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Скидки: логика применения</h1></header><p>В системе скидка — это отдельный объект <strong>«Скидка»</strong>, который может применяться к строкам документов продаж (в первую очередь — к строкам заказа покупателя).</p>
+<p>Скидка может задаваться:</p>
+<ul>
+<li>как <strong>процент скидки</strong>;</li>
+<li>как <strong>цена из типа цен</strong> (то есть «фиксировать цену по другому типу цен»).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=где-настраиваются-скидки>Где настраиваются скидки<a href=#где-настраиваются-скидки class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>Обычно список скидок находится в разделе <strong>«Продажи» → «Операции» → «Скидки»</strong>.</p>
+<p>В карточке скидки задаются:</p>
+<ul>
+<li>период действия;</li>
+<li>условия применимости;</li>
+<li>к каким товарам/категориям относится;</li>
+<li>какие типы цен разрешены;</li>
+<li>при необходимости — к каким местам хранения относится;</li>
+<li>размер скидки (процент) или тип цен (если скидка задаётся ценой).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=как-система-понимает-подходит-ли-скидка-строке>Как система понимает, подходит ли скидка строке<a href=#как-система-понимает-подходит-ли-скидка-строке class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>Для строки заказа покупателя система проверяет скидку по набору условий.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=1-по-товарам-и-категориям>1) По товарам и категориям<a href=#1-по-товарам-и-категориям class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Скидка может быть привязана:</p>
+<ul>
+<li>к конкретным товарам;</li>
+<li>к категориям товаров (иерархия категорий).</li>
+</ul>
+<p>Если в скидке не выбраны ни категории, ни товары, скидка считается настроенной неверно и система не даст её сохранить.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=2-по-периоду-действия>2) По периоду действия<a href=#2-по-периоду-действия class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Скидка применяется только если дата строки попадает в интервал:</p>
+<ul>
+<li>дата строки не раньше даты начала;</li>
+<li>дата строки не позже даты окончания.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=3-по-типу-цен>3) По типу цен<a href=#3-по-типу-цен class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Скидка может быть ограничена типами цен:</p>
+<ul>
+<li>если у скидки указаны типы цен, она применяется только к строкам с одним из этих типов;</li>
+<li>если типы цен не указаны, ограничение не действует.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=4-по-месту-хранения>4) По месту хранения<a href=#4-по-месту-хранения class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Скидка может быть ограничена местами хранения:</p>
+<ul>
+<li>если у скидки указаны места хранения, она применяется только к строкам с подходящим местом хранения;</li>
+<li>если места хранения не указаны, ограничение не действует.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=5-по-минимальному-количеству-и-сумме-строки>5) По минимальному количеству и сумме строки<a href=#5-по-минимальному-количеству-и-сумме-строки class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Скидка может требовать, чтобы в строке было не меньше:</p>
+<ul>
+<li>минимального количества;</li>
+<li>минимальной суммы.</li>
+</ul>
+<p>Если строка не дотягивает до порога, скидка не применяется.</p>
+<p>Важно: сумма для проверки берётся как «полная сумма» (рассчитанная от количества и цены; при необходимости учитывается налог).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=6-по-накопительным-условиям-по-покупателю>6) По накопительным условиям по покупателю<a href=#6-по-накопительным-условиям-по-покупателю class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Скидка может быть накопительной и включаться только если у покупателя:</p>
+<ul>
+<li>общий объём предыдущих покупок больше порога;</li>
+<li>или объём покупок за прошлый месяц больше порога.</li>
+</ul>
+<p>Эти значения берутся из истории продаж покупателя.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=как-считается-цена-по-скидке>Как считается цена по скидке<a href=#как-считается-цена-по-скидке class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>Для каждой подходящей скидки система вычисляет «цену по скидке».</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=вариант-1-скидка-в-процентах>Вариант 1: скидка в процентах<a href=#вариант-1-скидка-в-процентах class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Если в скидке задан процент, цена по скидке считается так:</p>
+<p><code>цена по скидке = исходная цена × (100 − процент скидки) / 100</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=вариант-2-скидка-через-тип-цен>Вариант 2: скидка через тип цен<a href=#вариант-2-скидка-через-ти�п-цен class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Если в скидке задан тип цен, цена по скидке берётся из этого типа цен на дату строки.</p>
+<p>Практический смысл:</p>
+<ul>
+<li>можно задать скидку как «продавать по оптовой цене» или «по цене из специального прайс‑листа».</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=как-выбирается-скидка-автоматически>Как выбирается скидка автоматически<a href=#как-выбирается-скидка-автоматически class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>Если для строки подходит несколько скидок, система автоматически выбирает <strong>наиболее выгодную для покупателя</strong> из автоматических скидок.</p>
+<p>Правило выбора:</p>
+<ul>
+<li>из всех подходящих автоматических скидок выбирается та, у которой <strong>цена по скидке минимальная</strong>.</li>
+</ul>
+<p>Это соответствует логике выбора в коде: выбирается скидка с минимальной рассчитанной ценой.</p>
+<p>Важно:</p>
+<ul>
+<li>скидки не суммируются;</li>
+<li>выбирается одна скидка, дающая минимальную цену (то есть «самую большую выгоду» в рамках заданных скидок).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=ручной-выбор-скидки-в-строке>Ручной выбор скидки в строке<a href=#ручной-выбор-скидки-в-строке class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>В строке заказа покупателя можно вручную выбрать скидку (поле «Скидка»).</p>
+<p>Как это работает:</p>
+<ol>
+<li>Пользователь открывает выбор скидки.</li>
+<li>Система показывает только те скидки, которые подходят к строке по условиям.</li>
+<li>Пользователь выбирает скидку.</li>
+</ol>
+<p>Если выбранная скидка процентная, система подставляет процент в строку (если пользователь не вводил процент вручную).</p>
+<p>Если выбранная скидка задаётся типом цен, система подставляет цену по этому типу цен и пересчитывает скидку/сумму строки.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=автоматический-пересчёт-скидок>Автоматический пересчёт скидок<a href=#автоматический-пересчёт-скидок class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>Если включён автоматический пересчёт скидок, система пересчитывает скидку по строке при изменениях:</p>
+<ul>
+<li>дата документа/строки;</li>
+<li>контрагент;</li>
+<li>номенклатура;</li>
+<li>количество;</li>
+<li>цена;</li>
+<li>тип документа;</li>
+<li>место хранения;</li>
+<li>общая сумма документа.</li>
+</ul>
+<p>Автоматический пересчёт выполняется только для скидок, которые не помечены как «вручную».</p>
+<p>Также в заказе есть действие <strong>«Рассчитать скидки»</strong>, которое принудительно пересчитывает скидки по всем строкам (кроме ручных).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=как-отключить-автопересчёт>Как отключить автопересчёт<a href=#как-отключить-автопересчёт class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>В настройках есть параметр <strong>«Не рассчитывать скидки автоматически в заказе»</strong>.</p>
+<p>Если он включён:</p>
+<ul>
+<li>автоматический пересчёт по изменениям не выполняется;</li>
+<li>пользователь применяет скидки вручную и/или через кнопку «Рассчитать скидки».</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=где-отражаются-скидки>Где отражаются скидки<a href=#где-отражаются-скидки class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>Скидки обычно видны:</p>
+<ul>
+<li>в строках заказа (выбранная скидка, процент/цена);</li>
+<li>в итогах заказа (сумма скидки по документу);</li>
+<li>в документах реализации (если скидки переносятся в реализацию);</li>
+<li>в отчётах по продажам.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=типовые-проблемы>Типовые проблемы<a href=#типовые-проблемы class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<ul>
+<li><strong>Скидка не применяется</strong> — проверьте дату, тип цен, место хранения, пороги количества/суммы и ограничения по товарам/категориям.</li>
+<li><strong>Подходят несколько скидок, но выбралась «не та»</strong> — система выбирает скидку с минимальной ценой по скидке. Если нужно выбрать другую, используйте ручной выбор.</li>
+<li><strong>Скидка «слетает» после изменения строки</strong> — включён автопересчёт и выбранная скидка не является ручной.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=примеры>Примеры<a href=#примеры class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h2>
+<p>Ниже — несколько упрощённых примеров, чтобы было понятно, как работают правила.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=пример-1-процентная-скидка-с-порогом-по-количеству>Пример 1. Процентная скидка с порогом по количеству<a href=#пример-1-процентная-скидка-с-порогом-по-количест�ву class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Условия скидки:</p>
+<ul>
+<li>товары: «Кабель» (или категория «Кабели»);</li>
+<li>период действия: текущий месяц;</li>
+<li>минимальное количество в строке: <code>10</code>;</li>
+<li>скидка: <code>5%</code>.</li>
+</ul>
+<p>Ситуация в заказе:</p>
+<ul>
+<li>строка: «Кабель», количество <code>8</code>, цена <code>100</code>.</li>
+</ul>
+<p>Результат:</p>
+<ul>
+<li>скидка <strong>не применяется</strong>, потому что количество меньше <code>10</code>.</li>
+</ul>
+<p>Если изменить количество на <code>10</code>:</p>
+<ul>
+<li>цена по скидке = <code>100 × (100 − 5) / 100 = 95</code>;</li>
+<li>в строке будет применена цена <code>95</code> (или процент <code>5%</code>, в зависимости от того, как настроено отображение в вашей форме).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=пример-2-скидка-через-тип-цен>Пример 2. Скидка через тип цен<a href=#пример-2-скидка-через-тип-цен class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Условия скидки:</p>
+<ul>
+<li>товары: категория «Бытовая техника»;</li>
+<li>скидка задаётся через тип цен: «Оптовая»;</li>
+<li>период действия: без ограничения.</li>
+</ul>
+<p>Ситуация в заказе:</p>
+<ul>
+<li>строка: «Чайник», количество <code>1</code>;</li>
+<li>текущая цена в заказе (например, по базовому типу цен) — <code>3 000</code>;</li>
+<li>цена по типу цен «Оптовая» на дату заказа — <code>2 700</code>.</li>
+</ul>
+<p>Результат:</p>
+<ul>
+<li>при применении этой скидки система подставит цену <code>2 700</code>.</li>
+</ul>
+<p>Практический смысл: вместо расчёта «процента» вы фиксируете, что для этой группы товаров должны использоваться цены из другого типа цен.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=пример-3-подходит-две-скидки--выбирается-наименее-выгодная-покупателю>Пример 3. Подходит две скидки — выбирается «наименее выгодная покупателю»<a href=#пример-3-подходит-две-скидки--выбирается-наименее-выгодная-покупателю class=hash-link aria-label="Прямая ссылка на этот заголовок" title="Прямая ссылка на этот заголовок">​</a></h3>
+<p>Пусть для строки подходят две автоматические скидки:</p>
+<ol>
+<li>Скидка А: <code>10%</code></li>
+<li>Скидка Б: <code>5%</code></li>
+</ol>
+<p>Исходная цена в строке: <code>100</code>.</p>
+<p>Цена по скидке:</p>
+<ul>
+<li>по скидке А: <code>100 × (100 − 10) / 100 = 90</code>;</li>
+<li>по скидке Б: <code>100 × (100 − 5) / 100 = 95</code>.</li>
+</ul>
+<p>Автовыбор:</p>
+<ul>
+<li>система выберет скидку А, потому что цена по скидке <code>90</code> <strong>ниже</strong>, чем <code>95</code>.</li>
+</ul>
+<p>Если по бизнес‑правилам нужно применить другую скидку (не самую выгодную), используйте ручной выбор скидки в строке.</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><a href=https://github.com/lsfusion-solutions/mycompany-docs/edit/main/i18n/ru/docusaurus-plugin-content-docs/current/sales/discounts.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Отредактировать эту страницу</a></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2025-12-24T13:40:12.000Z itemprop=dateModified>24 дек. 2025 г.</time></b></span></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Навигация по странице документации"><a class="pagination-nav__link pagination-nav__link--prev" href=/sales/pricelists/><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Прайс-листы и типы цен</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/sales/workflow-and-statuses/><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Процесс и статусы заказа покупателя</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#где-настраиваются-скидки class="table-of-contents__link toc-highlight">Где настраиваются скидки</a><li><a href=#как-система-понимает-подходит-ли-скидка-строке class="table-of-contents__link toc-highlight">Как система понимает, подходит ли скидка строке</a><ul><li><a href=#1-по-товарам-и-категориям class="table-of-contents__link toc-highlight">1) По товарам и категориям</a><li><a href=#2-по-периоду-действия class="table-of-contents__link toc-highlight">2) По периоду действия</a><li><a href=#3-по-типу-цен class="table-of-contents__link toc-highlight">3) По типу цен</a><li><a href=#4-по-месту-хранения class="table-of-contents__link toc-highlight">4) По месту хранения</a><li><a href=#5-по-минимальному-количеству-и-сумме-строки class="table-of-contents__link toc-highlight">5) По минимальному количеству и сумме строки</a><li><a href=#6-по-накопительным-условиям-по-покупателю class="table-of-contents__link toc-highlight">6) По накопительным условиям по покупателю</a></ul><li><a href=#как-считается-цена-по-скидке class="table-of-contents__link toc-highlight">Как считается цена по скидке</a><ul><li><a href=#вариант-1-скидка-в-процентах class="table-of-contents__link toc-highlight">Вариант 1: скидка в процентах</a><li><a href=#вариант-2-скидка-через-тип-цен class="table-of-contents__link toc-highlight">Вариант 2: скидка через тип цен</a></ul><li><a href=#как-выбирается-скидка-автоматически class="table-of-contents__link toc-highlight">Как выбирается скидка автоматически</a><li><a href=#ручной-выбор-скидки-в-строке class="table-of-contents__link toc-highlight">Ручной выбор скидки в строке</a><li><a href=#автоматический-пересчёт-скидок class="table-of-contents__link toc-highlight">Автоматический пересчёт скидок</a><ul><li><a href=#как-отключить-автопересчёт class="table-of-contents__link toc-highlight">Как отключить автопересчёт</a></ul><li><a href=#где-отражаются-скидки class="table-of-contents__link toc-highlight">Где отражаются скидки</a><li><a href=#типовые-проблемы class="table-of-contents__link toc-highlight">Типовые проблемы</a><li><a href=#примеры class="table-of-contents__link toc-highlight">Примеры</a><ul><li><a href=#пример-1-процентная-скидка-с-порогом-по-количеству class="table-of-contents__link toc-highlight">Пример 1. Процентная скидка с порогом по количеству</a><li><a href=#пример-2-скидка-через-тип-цен class="table-of-contents__link toc-highlight">Пример 2. Скидка через тип цен</a><li><a href=#пример-3-подходит-две-скидки--выбирается-наименее-выгодная-покупателю class="table-of-contents__link toc-highlight">Пример 3. Подходит две скидки — выбирается «наименее выгодная покупателю»</a></ul></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class=footer__title>MyCompany</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/>Документация</a><li class=footer__item><a href=https://mycompany.lsfusion.org/ target=_blank rel="noopener noreferrer" class=footer__link-item>Веб-сайт<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div><div class="col footer__col"><div class=footer__title>Сообщество</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://t.me/lsfusion_official target=_blank rel="noopener noreferrer" class=footer__link-item>Telegram<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://join.slack.com/t/lsfusion/shared_invite/zt-1itj7vlmf-9aBIP__nj9iMJglDaecqXg target=_blank rel="noopener noreferrer" class=footer__link-item>Slack<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://ru.stackoverflow.com/questions/tagged/lsfusion target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div><div class="col footer__col"><div class=footer__title>Другое</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://habr.com/ru/company/lsfusion/blog/ target=_blank rel="noopener noreferrer" class=footer__link-item>Хабр<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://github.com/lsfusion-solutions/mycompany target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2021 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
