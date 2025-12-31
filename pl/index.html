@@ -1,0 +1,301 @@
+<!doctype html><html lang=pl dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-overview" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>Moduły systemu — przegląd | MyCompany documentation</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:url content=https://danchanka.github.io/pl/><meta data-rh=true property=og:locale content=pl><meta data-rh=true property=og:locale:alternate content=en><meta data-rh=true property=og:locale:alternate content=ru><meta data-rh=true name=docusaurus_locale content=pl><meta data-rh=true name=docsearch:language content=pl><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="Moduły systemu — przegląd | MyCompany documentation"><meta data-rh=true name=description content="Ten dokument to przegląd modułów funkcjonalnych MyCompany: za co odpowiada każda sekcja, jakie zadania użytkowników rozwiązuje, jak moduły łączą się w procesy end‑to‑end oraz gdzie przejść po szczegółowe instrukcje."><meta data-rh=true property=og:description content="Ten dokument to przegląd modułów funkcjonalnych MyCompany: za co odpowiada każda sekcja, jakie zadania użytkowników rozwiązuje, jak moduły łączą się w procesy end‑to‑end oraz gdzie przejść po szczegółowe instrukcje."><link data-rh=true rel=icon href=/pl/img/favicon.ico><link data-rh=true rel=canonical href=https://danchanka.github.io/pl/><link data-rh=true rel=alternate href=https://danchanka.github.io/en/ hreflang=en><link data-rh=true rel=alternate href=https://danchanka.github.io/ hreflang=ru><link data-rh=true rel=alternate href=https://danchanka.github.io/pl/ hreflang=pl><link data-rh=true rel=alternate href=https://danchanka.github.io/ hreflang=x-default><script data-rh=true>document.addEventListener("DOMContentLoaded",function(){void 0===window.docusaurus&&insertBanner()});function insertBanner(){var n=document.createElement("div");n.id="__docusaurus-base-url-issue-banner-container",n.innerHTML='\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/pl/</span> </p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n',document.body.prepend(n);var e=document.getElementById("__docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname;e.innerHTML="/"===s.substr(-1)?s:s+"/"}</script><link rel=alternate type=application/rss+xml href=/pl/blog/rss.xml title="MyCompany documentation RSS Feed"><link rel=alternate type=application/atom+xml href=/pl/blog/atom.xml title="MyCompany documentation Atom Feed"><link rel=preconnect href=https://www.google-analytics.com><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-38678623-1","auto"),ga("send","pageview")</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-9PP67L9JM9"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9PP67L9JM9",{})</script><link rel=stylesheet href=/pl/assets/css/styles.a546c6e9.css><script src=/pl/assets/js/runtime~main.f780e159.js defer></script><script src=/pl/assets/js/main.4acf3ac8.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:"light",document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><div role=region aria-label="Przejdź do głównej zawartości"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Przejdź do głównej zawartości</a></div><nav aria-label=Main class="navbar navbar--fixed-top"><div class=navbar__inner><div class=navbar__items><button aria-label="Przełączanie panelu nawigacyjnego" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/pl/><div class=navbar__logo><img src=/pl/img/logo.png alt=Logo class="themedComponent_mlkZ themedComponent--light_NVdE"><img src=/pl/img/logo.png alt=Logo class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">MyCompany</b></a></div><div class="navbar__items navbar__items--right"><a href=https://github.com/lsfusion-solutions/mycompany target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>Polski</a><ul class=dropdown__menu><li><a href=/en/ target=_self rel="noopener noreferrer" class=dropdown__link lang=en>English</a><li><a href=/ target=_self rel="noopener noreferrer" class=dropdown__link lang=ru>Русский</a><li><a href=/pl/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=pl>Polski</a></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="Przełącz pomiędzy ciemnym a jasnym motywem (aktualnie ustawiony jasny motyw)" aria-label="Przełącz pomiędzy ciemnym a jasnym motywem (aktualnie ustawiony jasny motyw)" aria-live=polite aria-pressed=false><svg viewBox="0 0 24 24" width=24 height=24 class=lightToggleIcon_pyhR><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 class=darkToggleIcon_wfgR><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg></button></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Przewiń do góry" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Panel boczny dokumentów" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/pl/>Moduły systemu — przegląd</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/administration/>Administracja</a><button aria-label="Expand sidebar category 'Administracja'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/masterdata/>Dane podstawowe</a><button aria-label="Expand sidebar category 'Dane podstawowe'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/inventory/>Magazynowanie</a><button aria-label="Expand sidebar category 'Magazynowanie'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/invoicing/>Fakturowanie</a><button aria-label="Expand sidebar category 'Fakturowanie'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/purchase/>Zakup</a><button aria-label="Expand sidebar category 'Zakup'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/manufacturing/>Produkcja</a><button aria-label="Expand sidebar category 'Produkcja'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/sales/>Sprzedaż</a><button aria-label="Expand sidebar category 'Sprzedaż'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/retail/>Sprzedaż detaliczna</a><button aria-label="Expand sidebar category 'Sprzedaż detaliczna'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/projectManagement/>Zarządzanie projektami</a><button aria-label="Expand sidebar category 'Zarządzanie projektami'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/humanResources/>Kadry</a><button aria-label="Expand sidebar category 'Kadry'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/crm/>CRM</a><button aria-label="Expand sidebar category 'CRM'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" href=/pl/transport/>Transport</a><button aria-label="Expand sidebar category 'Transport'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Pasek nawigacji"><ul class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a aria-label="Strona główna" class=breadcrumbs__link href=/pl/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link itemprop=name>Moduły systemu — przegląd</span><meta itemprop=position content=1></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Na tej stronie</button></div><div class="theme-doc-markdown markdown"><header><h1>Moduły systemu — przegląd</h1></header><p>Ten dokument to <strong>przegląd modułów funkcjonalnych MyCompany</strong>: za co odpowiada każda sekcja, jakie zadania użytkowników rozwiązuje, jak moduły łączą się w procesy end‑to‑end oraz gdzie przejść po szczegółowe instrukcje.</p>
+<p>Jeśli w Twojej konfiguracji brakuje niektórych pozycji menu lub akcji, jest to normalne: dostępna funkcjonalność zależy od włączonych modułów, ustawień i uprawnień użytkownika.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=szybka-nawigacja>Szybka nawigacja<a href=#szybka-nawigacja class=hash-link aria-label="Bezpośredni link do Szybka nawigacja" title="Bezpośredni link do Szybka nawigacja">​</a></h2>
+<ul>
+<li><a href=/pl/administration/>Administracja</a></li>
+<li><a href=#master-data>Dane podstawowe</a></li>
+<li><a href=#module-map-and-end-to-end-processes>Mapa modułów i procesy end-to-end</a></li>
+<li><a href=#modules>Moduły</a>
+<ul>
+<li><a href=#master-data>Dane podstawowe</a></li>
+<li><a href=#inventory>Magazynowanie</a></li>
+<li><a href=#invoicing>Fakturowanie</a></li>
+<li><a href=#purchase>Zakup</a></li>
+<li><a href=#manufacturing>Produkcja</a></li>
+<li><a href=#sales>Sprzedaż</a></li>
+<li><a href=#retail>Sprzedaż detaliczna</a></li>
+<li><a href=#project-management>Zarządzanie projektami</a></li>
+<li><a href=#human-resources>Kadry</a></li>
+<li><a href=#crm>CRM</a></li>
+<li><a href=#transport>Transport</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=module-map-and-end-to-end-processes>Mapa modułów i procesy end-to-end<a href=#module-map-and-end-to-end-processes class=hash-link aria-label="Bezpośredni link do Mapa modułów i procesy end-to-end" title="Bezpośredni link do Mapa modułów i procesy end-to-end">​</a></h2>
+<p>Poniżej znajdują się typowe „łańcuchy” między modułami. W konkretnej organizacji część kroków może być wyłączona lub skonfigurowana inaczej.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=sprzedaż-od-leadu-do-płatności>Sprzedaż (od leadu do płatności)<a href=#sprzedaż-od-leadu-do-płatności class=hash-link aria-label="Bezpośredni link do Sprzedaż (od leadu do płatności)" title="Bezpośredni link do Sprzedaż (od leadu do płatności)">​</a></h3>
+<ol>
+<li><strong>CRM</strong> — praca z leadem i komunikacją.</li>
+<li><strong>Sprzedaż</strong> — zamówienie klienta, warunki wysyłki.</li>
+<li><strong>Magazynowanie</strong> (jeśli używany jest obszar magazynowy) — wydanie / ruch towarów.</li>
+<li><strong>Fakturowanie</strong> — faktura i płatność przychodząca → kontrola należności.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=zakup-od-zamówienia-do-płatności>Zakup (od zamówienia do płatności)<a href=#zakup-od-zamówienia-do-płatności class=hash-link aria-label="Bezpośredni link do Zakup (od zamówienia do płatności)" title="Bezpośredni link do Zakup (od zamówienia do płatności)">​</a></h3>
+<ol>
+<li><strong>Zakup</strong> — zamówienie do dostawcy i kontrola realizacji.</li>
+<li><strong>Magazynowanie</strong> (jeśli używany jest obszar magazynowy) — przyjęcie / ruchy magazynowe.</li>
+<li><strong>Fakturowanie</strong> — faktura zakupu i płatność wychodząca → kontrola zobowiązań.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=produkcja-od-planu-do-wytworzenia>Produkcja (od planu do wytworzenia)<a href=#produkcja-od-planu-do-wytworzenia class=hash-link aria-label="Bezpośredni link do Produkcja (od planu do wytworzenia)" title="Bezpośredni link do Produkcja (od planu do wytworzenia)">​</a></h3>
+<ol>
+<li><strong>Sprzedaż</strong> — źródło popytu (zamówienie klienta) lub plan wewnętrzny.</li>
+<li><strong>Produkcja</strong> — BOM → zlecenie produkcyjne → produkcja / zużycie.</li>
+<li><strong>Magazynowanie</strong> — surowce / wyroby gotowe (stany, partie / pakiety — jeśli włączone).</li>
+<li><strong>Zakup</strong> / <strong>Fakturowanie</strong> — uzupełnianie i rozliczanie kosztów (jeśli proces jest prowadzony end‑to‑end).</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=projekty-i-ewidencja-czasu>Projekty i ewidencja czasu<a href=#projekty-i-ewidencja-czasu class=hash-link aria-label="Bezpośredni link do Projekty i ewidencja czasu" title="Bezpośredni link do Projekty i ewidencja czasu">​</a></h3>
+<ol>
+<li><strong>Zarządzanie projektami</strong> — projekt → zagadnienia → przepracowany czas.</li>
+<li><strong>Kadry</strong> (jeśli włączona jest płaca wg czasu) — wykorzystanie wpisów czasu w naliczaniu i wypłacie.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=sprzedaż-detaliczna>Sprzedaż detaliczna<a href=#sprzedaż-detaliczna class=hash-link aria-label="Bezpośredni link do Sprzedaż detaliczna" title="Bezpośredni link do Sprzedaż detaliczna">​</a></h3>
+<ol>
+<li><strong>Sprzedaż detaliczna</strong> — POS, zmiany, paragon, płatność.</li>
+<li>W zależności od konfiguracji mogą być używane moduły <strong>Sprzedaż</strong> (dokumenty sprzedaży) i/lub <strong>Fakturowanie</strong> (płatności / rozliczanie długu).</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=transport-i-koszty>Transport i koszty<a href=#transport-i-koszty class=hash-link aria-label="Bezpośredni link do Transport i koszty" title="Bezpośredni link do Transport i koszty">​</a></h3>
+<ol>
+<li><strong>Transport</strong> — pojazdy / kierowcy / serwisy / umowy.</li>
+<li>Powiązane koszty mogą być rejestrowane w <strong>Fakturowaniu</strong> (faktury zakupu / płatności) i/lub w module <strong>Zakup</strong> (zamówienia do dostawców) — jeśli są włączone i używane.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=modules>Moduły<a href=#modules class=hash-link aria-label="Bezpośredni link do Moduły" title="Bezpośredni link do Moduły">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=master-data>Dane podstawowe<a href=#master-data class=hash-link aria-label="Bezpośredni link do Dane podstawowe" title="Bezpośredni link do Dane podstawowe">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/masterdata/>masterdata/masterdata.md</a></p>
+<p><strong>Cel.</strong> Sekcja do utrzymywania podstawowych danych referencyjnych wykorzystywanych w dokumentach i procesach innych modułów.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>tworzenie towarów i utrzymywanie ich w aktualnym stanie;</li>
+<li>utrzymywanie partnerów, ich danych kontaktowych i adresów;</li>
+<li>utrzymywanie klasyfikacji (kategorie), jednostek miary;</li>
+<li>utrzymywanie krajów, walut i kursów walut;</li>
+<li>rejestrowanie umów z partnerami.</li>
+</ul>
+<p><strong>Kluczowe obiekty:</strong> partner, towar, kategoria, jednostka miary, dział, kraj, waluta, kurs waluty, umowa.</p>
+<p><strong>Dla kogo:</strong> dla użytkowników odpowiedzialnych za utrzymywanie danych referencyjnych (administratorzy, księgowość/finanse, menedżerowie zakupów/sprzedaży — zależnie od procesu).</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/masterdata/>Dane podstawowe</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=inventory>Magazynowanie<a href=#inventory class=hash-link aria-label="Bezpośredni link do Magazynowanie" title="Bezpośredni link do Magazynowanie">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/inventory/>inventory/inventory.md</a></p>
+<p><strong>Cel.</strong> Obszar magazynowy: lokalizacje, przyjęcia / wydania, przemieszczenia, odpad, korekty, kompletacja, partie i pakiety (jeśli włączone), raporty stanów i ruchów.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>utworzyć przyjęcie i zakończyć dokument;</li>
+<li>utworzyć wydanie do zamówienia / faktury i zamknąć ruch;</li>
+<li>wykonać przemieszczenie między lokalizacjami (magazyny / strefy / miejsca składowania);</li>
+<li>wykonać korektę i zarejestrować różnice;</li>
+<li>zorganizować kompletację (jeśli używana).</li>
+</ul>
+<p><strong>Kluczowe obiekty/dokumenty:</strong> lokalizacja, przyjęcie, wydanie, przemieszczenie, odpad, korekta, partia, pakiet.</p>
+<p><strong>Dla kogo:</strong> pracownicy magazynu, logistyka, kierownicy magazynów; oraz w powiązaniu — sprzedaż / zakup.</p>
+<p><strong>Integracje:</strong> często „fizyczna” część procesów <a href=#sales>Sprzedaż</a>, <a href=#purchase>Zakup</a>, <a href=#manufacturing>Produkcja</a> i może być powiązany z dokumentami modułu <a href=#invoicing>Fakturowanie</a>.</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/inventory/receipts/>Przyjęcia</a></li>
+<li><a href=/pl/inventory/shipments/>Wydania</a></li>
+<li><a href=/pl/inventory/transfers/>Przemieszczania</a></li>
+<li><a href=/pl/inventory/adjustments/>Korekty</a></li>
+<li><a href=/pl/inventory/picking/>Zadania kompletacyjne</a></li>
+<li><a href=/pl/inventory/lots-and-packages/>Partie i pakiety</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=invoicing>Fakturowanie<a href=#invoicing class=hash-link aria-label="Bezpośredni link do Fakturowanie" title="Bezpośredni link do Fakturowanie">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/invoicing/>invoicing/invoicing.md</a></p>
+<p><strong>Cel.</strong> Obszar rozliczeń finansowych: faktury zakupu i faktury, płatności (przychodzące / wychodzące), dług, kalendarz płatności, podatki, drukowanie i raportowanie.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>utworzyć fakturę i zarejestrować płatność przychodzącą z rozliczeniem;</li>
+<li>utworzyć fakturę zakupu od dostawcy i zapłacić (płatność wychodząca);</li>
+<li>kontrolować należności / zobowiązania wg partnerów, umów i dokumentów;</li>
+<li>zarządzać kalendarzem płatności (jeśli używany).</li>
+</ul>
+<p><strong>Kluczowe obiekty/dokumenty:</strong> faktura, faktura zakupu, płatność przychodząca, płatność wychodząca, dług.</p>
+<p><strong>Dla kogo:</strong> menedżerowie (kontrola płatności), księgowość / finanse (rejestracja i rozliczanie płatności, raportowanie).</p>
+<p><strong>Integracje:</strong></p>
+<ul>
+<li>ze <a href=#sales>Sprzedażą</a> — faktury i płatności klientów;</li>
+<li>z <a href=#purchase>Zakupem</a> — faktury zakupu i płatności do dostawców;</li>
+<li>z <a href=#inventory>Magazynowaniem</a> — faktura może tworzyć wydanie (jeśli włączone).</li>
+</ul>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/invoicing/invoices/>Faktury</a></li>
+<li><a href=/pl/invoicing/bills/>Faktury zakupu</a></li>
+<li><a href=/pl/invoicing/ksef/>KSeF — faktury ustrukturyzowane</a></li>
+<li><a href=/pl/invoicing/payments/>Płatności</a></li>
+<li><a href=/pl/invoicing/incoming-payments/>Płatności przychodzące</a></li>
+<li><a href=/pl/invoicing/outgoing-payments/>Płatności wychodzące</a></li>
+<li><a href=/pl/invoicing/debt-and-calendar/>Dług i kalendarz płatności</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=purchase>Zakup<a href=#purchase class=hash-link aria-label="Bezpośredni link do Zakup" title="Bezpośredni link do Zakup">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/purchase/>purchase/purchase.md</a></p>
+<p><strong>Cel.</strong> Obszar zakupów: zamówienia do dostawców, cenniki dostawców, przyjęcia / faktury zakupu oraz kontrola realizacji (co zamówiono, co przyjęto, co pozostało).</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>utworzyć zamówienie do dostawcy → potwierdzić / wysłać → przyjąć towar (jeśli używane jest magazynowanie) → utworzyć fakturę zakupu → zapłacić;</li>
+<li>używać cenników jako źródła cen i warunków;</li>
+<li>analizować realizację i terminy.</li>
+</ul>
+<p><strong>Kluczowe obiekty/dokumenty:</strong> zamówienie do dostawcy, przyjęcie, faktura zakupu, cennik.</p>
+<p><strong>Dla kogo:</strong> menedżerowie zakupów, magazyn / logistyka, finanse.</p>
+<p><strong>Integracje:</strong></p>
+<ul>
+<li>z <a href=#inventory>Magazynowaniem</a> — przyjęcia / ruchy;</li>
+<li>z <a href=#invoicing>Fakturowaniem</a> — faktury zakupu i płatności wychodzące.</li>
+</ul>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/purchase/orders/>Zamówienia do dostawców</a></li>
+<li><a href=/pl/purchase/receipts/>Przyjęcia do zamówień</a></li>
+<li><a href=/pl/purchase/bills/>Faktury zakupu do zamówień</a></li>
+<li><a href=/pl/purchase/pricelists/>Cenniki dostawców</a></li>
+<li><a href=/pl/purchase/reports/>Raporty zakupowe</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=manufacturing>Produkcja<a href=#manufacturing class=hash-link aria-label="Bezpośredni link do Produkcja" title="Bezpośredni link do Produkcja">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/manufacturing/>manufacturing/manufacturing.md</a></p>
+<p><strong>Cel.</strong> Obszar produkcji: BOM (specyfikacje), planowanie i realizacja zleceń produkcyjnych, rezerwacje materiałów, produkcja i zużycie, braki/odpady, drukowanie i raportowanie.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>utworzyć / zweryfikować BOM produktu → utworzyć zlecenie produkcyjne → zarezerwować materiały → rozpocząć → zarejestrować produkcję / zużycie → zakończyć;</li>
+<li>tworzyć zlecenia produkcyjne na podstawie zamówień klientów (jeśli włączone);</li>
+<li>kontrolować koszt wytworzenia i partie (jeśli używane).</li>
+</ul>
+<p><strong>Kluczowe obiekty/dokumenty:</strong> BOM (specyfikacja), zlecenie produkcyjne, rezerwacja materiału, produkcja i zużycie.</p>
+<p><strong>Dla kogo:</strong> dyspozytorzy produkcji, brygadziści, planiści, magazyn (materiały / wyroby gotowe).</p>
+<p><strong>Integracje:</strong> silnie powiązana z <a href=#inventory>Magazynowaniem</a> (materiały / wydanie), może być powiązana ze <a href=#sales>Sprzedażą</a> (popyt) i <a href=#purchase>Zakupem</a> (uzupełnianie materiałów).</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/manufacturing/bom/>BOM (specyfikacje)</a></li>
+<li><a href=/pl/manufacturing/orders/>Zlecenia produkcyjne: lista i karta</a></li>
+<li><a href=/pl/manufacturing/workflow/>Proces i statusy zlecenia produkcyjnego</a></li>
+<li><a href=/pl/manufacturing/production-and-consumption/>Produkcja i zużycie</a></li>
+<li><a href=/pl/manufacturing/costing/>Koszt wytworzenia: jak jest liczony</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=sales>Sprzedaż<a href=#sales class=hash-link aria-label="Bezpośredni link do Sprzedaż" title="Bezpośredni link do Sprzedaż">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/sales/>sales/sales.md</a></p>
+<p><strong>Cel.</strong> Obszar zarządzania sprzedażą: zamówienia klientów, proces / statusy, wydania i faktury do zamówień, cenniki / typy cen, rabaty i raportowanie.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>utworzyć zamówienie klienta → potwierdzić → utworzyć wydanie i/lub fakturę (zależnie od procesu);</li>
+<li>zarządzać cenami przez cenniki i typy cen;</li>
+<li>wyliczać i kontrolować rabaty;</li>
+<li>analizować sprzedaż i realizację zamówień.</li>
+</ul>
+<p><strong>Kluczowe obiekty/dokumenty:</strong> zamówienie klienta, pozycja zamówienia, wydanie, faktura.</p>
+<p><strong>Dla kogo:</strong> handlowcy, kierownicy sprzedaży, magazyn (dla wydań).</p>
+<p><strong>Integracje:</strong></p>
+<ul>
+<li>z <a href=#inventory>Magazynowaniem</a> — wydania oraz rezerwacje / dostępność (jeśli włączone);</li>
+<li>z <a href=#invoicing>Fakturowaniem</a> — faktury i kontrola płatności.</li>
+</ul>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/sales/orders/>Zamówienia klientów</a></li>
+<li><a href=/pl/sales/workflow-and-statuses/>Proces i statusy zamówienia</a></li>
+<li><a href=/pl/sales/shipments/>Wydania do zamówień</a></li>
+<li><a href=/pl/sales/invoices/>Faktury do zamówień</a></li>
+<li><a href=/pl/sales/pricelists/>Cenniki i typy cen</a></li>
+<li><a href=/pl/sales/discounts/>Rabaty</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=retail>Sprzedaż detaliczna<a href=#retail class=hash-link aria-label="Bezpośredni link do Sprzedaż detaliczna" title="Bezpośredni link do Sprzedaż detaliczna">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/retail/>retail/retail.md</a></p>
+<p><strong>Cel.</strong> Sprzedaż detaliczna przez POS: zarządzanie zmianami, sprzedaż i zwroty, rabaty i karty rabatowe, przyjmowanie płatności.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>skonfigurować POS i metody płatności → otworzyć zmianę → utworzyć sprzedaż w POS → przyjąć płatność → zamknąć zmianę;</li>
+<li>utworzyć zwrot (po paragonie lub w trybie „wolnym” — zależnie od konfiguracji);</li>
+<li>używać kart rabatowych i rabatów;</li>
+<li>pracować z towarami oznaczonymi (jeśli włączone).</li>
+</ul>
+<p><strong>Kluczowe obiekty/dokumenty:</strong> POS, zmiana, paragon, metoda płatności, karta rabatowa.</p>
+<p><strong>Dla kogo:</strong> kasjerzy, starsi kasjerzy / administratorzy sklepu, osoby odpowiedzialne za konfigurację.</p>
+<p><strong>Integracje:</strong> w zależności od ustawień może przekazywać wyniki do modułów <a href=#sales>Sprzedaż</a> i/lub <a href=#invoicing>Fakturowanie</a>.</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/retail/pos/>POS</a></li>
+<li><a href=/pl/retail/sessions/>Zmiany</a></li>
+<li><a href=/pl/retail/payments/>Płatności w sprzedaży detalicznej</a></li>
+<li><a href=/pl/retail/returns/>Zwroty</a></li>
+<li><a href=/pl/retail/discount-cards/>Karty rabatowe</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=project-management>Zarządzanie projektami<a href=#project-management class=hash-link aria-label="Bezpośredni link do Zarządzanie projektami" title="Bezpośredni link do Zarządzanie projektami">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/projectManagement/>projectManagement/projectManagement.md</a></p>
+<p><strong>Cel.</strong> Obszar projektów: projekty i zagadnienia, zespół i role, przepracowany czas i karty pracy (timesheets), widoki kontrolne (np. Kanban / Gantt) i raportowanie.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>utworzyć projekt → zbudować plan zagadnień → przypisać wykonawców i terminy;</li>
+<li>śledzić postęp po statusach i komentarzach;</li>
+<li>rejestrować nakład pracy przez przepracowany czas;</li>
+<li>zbierać karty pracy i raporty rzeczywiste.</li>
+</ul>
+<p><strong>Kluczowe obiekty:</strong> projekt, zagadnienie, przypisanie (rola / udział), przepracowany czas, status / przepływ pracy.</p>
+<p><strong>Dla kogo:</strong> menedżerowie projektów, wykonawcy, liderzy zespołów.</p>
+<p><strong>Integracje:</strong> jeśli włączone jest rozliczanie wg czasu, moduł jest używany razem z <a href=#human-resources>Kadrami</a>.</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/projectManagement/projects/>Projekty</a></li>
+<li><a href=/pl/projectManagement/tasks/>Zagadnienia</a></li>
+<li><a href=/pl/projectManagement/time-entries/>Przepracowany czas</a></li>
+<li><a href=/pl/projectManagement/timesheets/>Karty pracy (Timesheet)</a></li>
+<li><a href=/pl/projectManagement/team-and-roles/>Zespół i role w projekcie</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=human-resources>Kadry<a href=#human-resources class=hash-link aria-label="Bezpośredni link do Kadry" title="Bezpośredni link do Kadry">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/humanResources/>humanResources/humanResources.md</a></p>
+<p><strong>Cel.</strong> Moduł kadrowy: rekrutacja, ewidencja czasu pracy (wejście / wyjście), naliczanie i wypłata wynagrodzeń.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>aplikacja kandydata → ankieta → rozmowa → decyzja (zatrudnij / odrzuć);</li>
+<li>ewidencja czasu pracy (rejestracja mobilna / kiosk — jeśli używane);</li>
+<li>utworzyć listę płac → wygenerować paski płacowe → zarejestrować wypłatę (jeśli prowadzona w systemie).</li>
+</ul>
+<p><strong>Kluczowe obiekty/dokumenty:</strong> aplikacja kandydata, rozmowa, ewidencja obecności, lista płac, pasek płacowy.</p>
+<p><strong>Dla kogo:</strong> rekruterzy, specjaliści HR, księgowi płac / finanse, kierownicy działów.</p>
+<p><strong>Integracje:</strong> jeśli włączona jest logika rozliczeń wg czasu, moduł może wykorzystywać wpisy czasu z <a href=#project-management>Zarządzania projektami</a>.</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/humanResources/recruitment/>Rekrutacja</a></li>
+<li><a href=/pl/humanResources/attendance/>Ewidencja czasu pracy</a></li>
+<li><a href=/pl/humanResources/payroll/>Płace: naliczanie i wypłata</a></li>
+<li><a href=/pl/humanResources/payslip/>Pasek płacowy</a></li>
+<li><a href=/pl/humanResources/net-wage/>Jak wyliczany jest wynik „Do wypłaty”</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=crm>CRM<a href=#crm class=hash-link aria-label="Bezpośredni link do CRM" title="Bezpośredni link do CRM">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/crm/>crm/crm.md</a></p>
+<p><strong>Cel.</strong> Moduł do pracy z leadami (lejek): od pierwszego kontaktu po przekazanie do sprzedaży. Fokus: wygodna karta leadu, zarządzanie statusami i historia interakcji.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>obsłużyć połączenie / e‑mail → utworzyć leada lub dołączyć komunikację do istniejącego;</li>
+<li>prowadzić leada po etapach (statusy) na tablicy kanban;</li>
+<li>zapisywać ustalenia i „następny krok”;</li>
+<li>tworzyć powiązane dokumenty (np. zamówienie / fakturę) — jeśli skonfigurowano.</li>
+</ul>
+<p><strong>Kluczowe obiekty:</strong> lead, typ leadu, status leadu, priorytet leadu, tagi leadu, komunikacje.</p>
+<p><strong>Dla kogo:</strong> handlowcy i kierownicy sprzedaży (kontrola lejka i jakości prowadzenia leadów).</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/crm/leads/>Leady: lista i karta</a></li>
+<li><a href=/pl/crm/kanban/>Tablica leadów (kanban)</a></li>
+<li><a href=/pl/crm/communications/>Komunikacja: połączenia i e‑maile</a></li>
+<li><a href=/pl/crm/sales-and-documents/>Zamówienia i faktury z leadu</a></li>
+<li><a href=/pl/crm/reports/>Raport leadów</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=transport>Transport<a href=#transport class=hash-link aria-label="Bezpośredni link do Transport" title="Bezpośredni link do Transport">​</a></h3>
+<p>Start dokumentacji: <a href=/pl/transport/>transport/transport.md</a></p>
+<p><strong>Cel.</strong> Ewidencja transportu (flota): pojazdy, przypisania kierowców, serwisy (prace / koszty), umowy na pojazdy oraz ustawienia danych referencyjnych.</p>
+<p><strong>Typowe scenariusze:</strong></p>
+<ul>
+<li>utworzyć kartę pojazdu i uzupełnić dane referencyjne (model, typ paliwa itp.);</li>
+<li>przypisywać kierowców do pojazdów w okresach;</li>
+<li>rejestrować serwisy z datą, typem, przebiegiem i kosztem;</li>
+<li>prowadzić umowy (najem / leasing / ubezpieczenie itp.) i kontrolować terminy.</li>
+</ul>
+<p><strong>Kluczowe obiekty:</strong> pojazd, kierowca, serwis pojazdu, umowa na pojazd, tagi i pliki.</p>
+<p><strong>Dla kogo:</strong> specjaliści ds. floty/transportu, księgowość (kontrola kosztów), administratorzy (ustawienia danych referencyjnych).</p>
+<p><strong>Czytaj dalej:</strong></p>
+<ul>
+<li><a href=/pl/transport/vehicles/>Pojazdy</a></li>
+<li><a href=/pl/transport/drivers/>Kierowcy</a></li>
+<li><a href=/pl/transport/service/>Serwisy pojazdów</a></li>
+<li><a href=/pl/transport/contracts/>Umowy na pojazdy</a></li>
+<li><a href=/pl/transport/settings/>Konfiguracja</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><a href=https://github.com/lsfusion-solutions/mycompany-docs/edit/main/i18n/pl/docusaurus-plugin-content-docs/current/overview.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edytuj tę stronę</a></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Ostatnia aktualizacja<!-- --> dnia <b><time datetime=2025-12-31T08:04:28.000Z itemprop=dateModified>31 gru 2025</time></b></span></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Strona dokumentacji"><a class="pagination-nav__link pagination-nav__link--next" href=/pl/administration/><div class=pagination-nav__sublabel>Następna strona</div><div class=pagination-nav__label>Administracja — instalacja i utrzymanie</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#szybka-nawigacja class="table-of-contents__link toc-highlight">Szybka nawigacja</a><li><a href=#module-map-and-end-to-end-processes class="table-of-contents__link toc-highlight">Mapa modułów i procesy end-to-end</a><ul><li><a href=#sprzedaż-od-leadu-do-płatności class="table-of-contents__link toc-highlight">Sprzedaż (od leadu do płatności)</a><li><a href=#zakup-od-zamówienia-do-płatności class="table-of-contents__link toc-highlight">Zakup (od zamówienia do płatności)</a><li><a href=#produkcja-od-planu-do-wytworzenia class="table-of-contents__link toc-highlight">Produkcja (od planu do wytworzenia)</a><li><a href=#projekty-i-ewidencja-czasu class="table-of-contents__link toc-highlight">Projekty i ewidencja czasu</a><li><a href=#sprzedaż-detaliczna class="table-of-contents__link toc-highlight">Sprzedaż detaliczna</a><li><a href=#transport-i-koszty class="table-of-contents__link toc-highlight">Transport i koszty</a></ul><li><a href=#modules class="table-of-contents__link toc-highlight">Moduły</a><ul><li><a href=#master-data class="table-of-contents__link toc-highlight">Dane podstawowe</a><li><a href=#inventory class="table-of-contents__link toc-highlight">Magazynowanie</a><li><a href=#invoicing class="table-of-contents__link toc-highlight">Fakturowanie</a><li><a href=#purchase class="table-of-contents__link toc-highlight">Zakup</a><li><a href=#manufacturing class="table-of-contents__link toc-highlight">Produkcja</a><li><a href=#sales class="table-of-contents__link toc-highlight">Sprzedaż</a><li><a href=#retail class="table-of-contents__link toc-highlight">Sprzedaż detaliczna</a><li><a href=#project-management class="table-of-contents__link toc-highlight">Zarządzanie projektami</a><li><a href=#human-resources class="table-of-contents__link toc-highlight">Kadry</a><li><a href=#crm class="table-of-contents__link toc-highlight">CRM</a><li><a href=#transport class="table-of-contents__link toc-highlight">Transport</a></ul></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class=footer__title>MyCompany</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/pl/>Docs</a><li class=footer__item><a href=https://mycompany.lsfusion.org/ target=_blank rel="noopener noreferrer" class=footer__link-item>Website<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div><div class="col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://t.me/lsfusion_official target=_blank rel="noopener noreferrer" class=footer__link-item>Telegram<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://join.slack.com/t/lsfusion/shared_invite/zt-1itj7vlmf-9aBIP__nj9iMJglDaecqXg target=_blank rel="noopener noreferrer" class=footer__link-item>Slack<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://ru.stackoverflow.com/questions/tagged/lsfusion target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div><div class="col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://habr.com/ru/company/lsfusion/blog/ target=_blank rel="noopener noreferrer" class=footer__link-item>Habr<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a><li class=footer__item><a href=https://github.com/lsfusion-solutions/mycompany target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-hidden=true viewBox="0 0 24 24" class=iconExternalLink_nPIU><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2025 lsFusion Foundation. Built with Docusaurus.</div></div></div></footer></div>
