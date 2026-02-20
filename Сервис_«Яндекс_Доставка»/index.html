@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Сервис «Яндекс Доставка» | lsfusion erp documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://danchanka.github.io/Сервис_«Яндекс_Доставка»/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Сервис «Яндекс Доставка» | lsfusion erp documentation"><meta data-rh="true" name="description" content="При работе с сервисом «Яндекс Доставка» заказ покупателя формируется на сайте интернет-магазина клиента, комплектуется на складе клиента, а доставка собранного заказа покупателю производится сервисом «Яндекс Доставка»."><meta data-rh="true" property="og:description" content="При работе с сервисом «Яндекс Доставка» заказ покупателя формируется на сайте интернет-магазина клиента, комплектуется на складе клиента, а доставка собранного заказа покупателю производится сервисом «Яндекс Доставка»."><link data-rh="true" rel="canonical" href="https://danchanka.github.io/Сервис_«Яндекс_Доставка»/"><link data-rh="true" rel="alternate" href="https://danchanka.github.io/Сервис_«Яндекс_Доставка»/" hreflang="en"><link data-rh="true" rel="alternate" href="https://danchanka.github.io/Сервис_«Яндекс_Доставка»/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="lsfusion erp documentation RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="lsfusion erp documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.849f0927.css">
-<script src="/assets/js/runtime~main.b0cb0225.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="lsfusion erp documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.7d6d20ff.css">
+<script src="/assets/js/runtime~main.9113f0e0.js" defer="defer"></script>
 <script src="/assets/js/main.b774b3a6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,25 +21,25 @@
 <strong>Пограничный вес</strong> – максимальный вес, после которого увеличивается тариф<br>
 <strong>Логировать все запросы ЯндексДоставки</strong> – включает запись запросов сервиса в log файл.</p>
 <p><img decoding="async" loading="lazy" src="/assets/images/633905422-296e9ef29641c55a41033aacf74f007a.png" width="900" height="277" class="img_ev3q"><br>
-<!-- -->Рис.  1Настройки интеграции со службой «Яндекс Доставка»</p>
+<!-- -->Рис.   1Настройки интеграции со службой «Яндекс Доставка»</p>
 <p>На форме <strong>Рабочий стол</strong> – <strong>Интернет-магазин</strong> – <strong>Справочники интернет-магазинов</strong> на вкладке Перевозчики необходимо добавить перевозчика Яндекс. Доставка, для которого обязательно указать <strong>Код</strong> <em><strong>&quot;yandexDelivery&quot;</strong></em> и удобное для пользователей наименование.</p>
 <p><img decoding="async" loading="lazy" src="/assets/images/633905417-23f91367bc44662019a58a006374f71f.png" width="900" height="428" class="img_ev3q"><br>
-<!-- -->Рис. 2 Перевозчик сервиса «Яндекс Доставка»</p>
+<!-- -->Рис.  2 Перевозчик сервиса «Яндекс Доставка»</p>
 <p>В планировщике необходимо настроить задание для регулярного обмена запросами по статусам заявок на доставку с сервисом «Яндекс Доставка».</p>
 <p><img decoding="async" loading="lazy" src="/assets/images/633905412-4d9068363b7285aff93287531defef3f.png" width="900" height="468" class="img_ev3q"><br>
-<!-- -->Рис.  3 Задание планировщика</p>
+<!-- -->Рис.   3 Задание планировщика</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="работа-с-заказами">Работа с заказами<a href="#работа-с-заказами" class="hash-link" aria-label="Direct link to Работа с заказами" title="Direct link to Работа с заказами">​</a></h2>
 <p>При работе с сервисом «Яндекс Доставка» покупатель формирует заказ в интернет-магазине и выбирает вид доставки, которую реализует «Яндекс Доставка». Заказ поступает в систему lsFusion ERP и отображается на форме <strong>Рабочий стол</strong> – <strong>Интернет-заказы</strong> (рис. 4).<br>
 <!-- -->В интернет- заказе указан <strong>Перевозчик</strong> <em>Яндекс Доставка</em>, отмечен признак <strong>Доставка</strong> и указаны координаты доставки (рис. 5). Сотрудники могут получать уведомление о поступлении заказов через мессенджеры.</p>
 <p><img decoding="async" loading="lazy" src="/assets/images/633905407-1580165d1a09b560648022fc461d7b8a.png" width="900" height="486" class="img_ev3q"><br>
-<!-- -->Рис.  4 Список интернет-заказов</p>
+<!-- -->Рис.   4 Список интернет-заказов</p>
 <p><img decoding="async" loading="lazy" src="/assets/images/633905402-2d0ff0c7e140c46a1e30eda066a98b01.png" width="900" height="406" class="img_ev3q"><br>
-<!-- -->Рис. 5 Интернет-заказ с доставкой сервисом «Яндекс Доставка»</p>
+<!-- -->Рис.  5 Интернет-заказ с доставкой сервисом «Яндекс Доставка»</p>
 <p>По таким заказам автоматически создается Заявка на доставку для сервиса «Яндекс Доставка», которая отображается на форме <strong>Рабочий стол</strong> – <strong>Интернет-заказы</strong> на вкладке <strong>Доставка</strong>.<br>
 <!-- -->На форме заявки на доставку отображаются все данные о доставке, которые регулярно обновляются. Фиксируется <strong>Тариф</strong>, отображается расчетная (<strong>Оценка</strong>) и фактическая (<strong>Стоимость</strong>) стоимость доставки. Отображается <strong>Статус</strong>, который автоматически изменяется в зависимости от стадии обработки заказа. На карте отображаются начальная и конечная точки маршрута, а после передачи заказа курьеру, также его местоположение в течение доставки.<br>
 <!-- -->После того, как для доставки сервисом назначен курьер, его имя и телефон отображаются в заявке. Также для передачи заказа курьеру используется код подтверждения, который также отображается на форме заявки.</p>
 <p><img decoding="async" loading="lazy" src="/assets/images/633905397-9a827b3a22daefe629f8086eefbab2cb.png" width="900" height="486" class="img_ev3q"><br>
-<!-- -->Рис.  6 Форма заявки на доставку</p>
+<!-- -->Рис.   6 Форма заявки на доставку</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="возврат">Возврат<a href="#возврат" class="hash-link" aria-label="Direct link to Возврат" title="Direct link to Возврат">​</a></h2>
 <p>Если покупатель возвращает товар курьеру, то в зависимости от настроек логики:</p>
 <ol>
