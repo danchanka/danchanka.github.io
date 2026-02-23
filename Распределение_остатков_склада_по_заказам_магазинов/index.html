@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Распределение остатков склада по заказам магазинов | lsfusion erp documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://danchanka.github.io/Распределение_остатков_склада_по_заказам_магазинов/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Распределение остатков склада по заказам магазинов | lsfusion erp documentation"><meta data-rh="true" name="description" content="Механизм распределения остатков товаров на складе по заказам магазинов позволяет массово создавать заказы на продажу со склада на основании заказов на закупку магазинов, с несколькими возможными алгоритмами при распределении дефицитных товаров."><meta data-rh="true" property="og:description" content="Механизм распределения остатков товаров на складе по заказам магазинов позволяет массово создавать заказы на продажу со склада на основании заказов на закупку магазинов, с несколькими возможными алгоритмами при распределении дефицитных товаров."><link data-rh="true" rel="canonical" href="https://danchanka.github.io/Распределение_остатков_склада_по_заказам_магазинов/"><link data-rh="true" rel="alternate" href="https://danchanka.github.io/Распределение_остатков_склада_по_заказам_магазинов/" hreflang="en"><link data-rh="true" rel="alternate" href="https://danchanka.github.io/Распределение_остатков_склада_по_заказам_магазинов/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="lsfusion erp documentation RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="lsfusion erp documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.7d6d20ff.css">
-<script src="/assets/js/runtime~main.9113f0e0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.70886819.js" defer="defer"></script>
 <script src="/assets/js/main.b774b3a6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -14,16 +14,16 @@
 <p><img decoding="async" loading="lazy" src="/assets/images/633903290-45c5768356f8de131035cc803e8473ae.png" width="1752" height="835" class="img_ev3q"><br>
 <em>Рис. 1 Форма Распределение со склада</em></p>
 <ul>
-<li><a href="#%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-broken">Выбор склада</a></li>
-<li><a href="#%D0%91%D0%BB%D0%BE%D0%BA%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-broken">Блок Магазин</a></li>
-<li><a href="#%D0%92%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D0%A2%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-broken">Вкладка Товары</a></li>
-<li><a href="#id-%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0%D0%BF%D0%BE%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D0%BC%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE%D0%B2-%D0%92%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%D1%8B(%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-broken)">Вкладка Заказы (продажа)</a></li>
-<li><a href="#%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-broken">Алгоритм распределения товаров</a>
+<li><a href="#%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0">Выбор склада</a></li>
+<li><a href="#%D0%B1%D0%BB%D0%BE%D0%BA-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD">Блок Магазин</a></li>
+<li><a href="#%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B">Вкладка Товары</a></li>
+<li><a href="#%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D1%8B-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0">Вкладка Заказы (продажа)</a></li>
+<li><a href="#%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2">Алгоритм распределения товаров</a>
 <ul>
-<li><a href="#%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%B4%D0%B5%D1%84%D0%B8%D1%86%D0%B8%D1%82%D0%BE%D0%BC-broken">Распределение товаров с дефицитом</a></li>
+<li><a href="#%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D1%81-%D0%B4%D0%B5%D1%84%D0%B8%D1%86%D0%B8%D1%82%D0%BE%D0%BC">Распределение товаров с дефицитом</a></li>
 </ul>
 </li>
-<li><a href="#%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-broken">Настройки</a></li>
+<li><a href="#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8">Настройки</a></li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="выбор-склада">Выбор склада<a href="#выбор-склада" class="hash-link" aria-label="Direct link to Выбор склада" title="Direct link to Выбор склада">​</a></h3>
 <p>Форма <strong>Распределение со склада</strong> состоит из нескольких блоков. В первую очередь в левом верхнем углу нужно установить склад и период для обработки данных (рис. 1):</p>
@@ -57,7 +57,7 @@
 <p><strong>Резерв продаж (всего)</strong> - количество товара, зарезервированного в заказах на продажу на текущий момент</p>
 <p><strong>Внутренних заказов (закупка) на период</strong> - количество товаров в заказах на закупку за указанный период</p>
 <p><strong>Создать заказы (продажа)</strong> - количество товара, который требуется, чтобы создать заказы на продажу</p>
-<p><strong>Распределяемое количество</strong> - количество товара, которое доступно для распределения на заказы (продажа). В зависимости от <a href="#stock_distribution_settings-broken">настроек</a>, <em><strong>Распределяемое количество = текущий остаток - резерв (продажа)</strong></em> или  <em><strong>Распределяемое количество = текущий остаток + резерв (закупка)- резерв (продажа)</strong></em>.</p>
+<p><strong>Распределяемое количество</strong> - количество товара, которое доступно для распределения на заказы (продажа). В зависимости от <a href="#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8">настроек</a>, <em><strong>Распределяемое количество = текущий остаток - резерв (продажа)</strong></em> или  <em><strong>Распределяемое количество = текущий остаток + резерв (закупка)- резерв (продажа)</strong></em>.</p>
 <p>В таблице <strong>Строки заказа (закупка)</strong> отображаются все строки заказов на закупку из магазинов, которые содержат выделенный в таблице <strong>SKU</strong> товар. По умолчанию включен фильтр <strong>По датам поставок</strong>, если его снять, отобразятся все открытые заказы с выделенным товаром. Также есть фильтр, который ограничивает отображение строк заказов в разрезе магазинов:</p>
 <ul>
 <li><strong>Все</strong> - по всем магазинам, независимо от того, они отмечены или нет.</li>
